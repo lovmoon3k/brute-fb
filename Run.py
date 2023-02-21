@@ -174,7 +174,7 @@ class Logo:
 	def logonya(self):
 		self.bersihkan_layar()
 		prints(Panel(f"""\t{color_text}╔╗ ╦═╗╦ ╦╔╦╗╔═╗  ╔═╗╔╗
-   ╠╩╗╠╦╝║ ║ ║ ║╣   ╠╣ ╠╩╗  | AFSX-X
+      ╠╩╗╠╦╝║ ║ ║ ║╣   ╠╣ ╠╩╗  | AFSX-X
 \t╚═╝╩╚═╚═╝ ╩ ╚═╝  ╚  ╚═╝  | SCRIPT FREE
 \tMULTI BRUTE FORCE FACEBOOK V0. 4""",width=80,style=f"{color_panel}"))
 	
