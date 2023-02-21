@@ -1,0 +1,8 @@
+rich
+bs4
+colorama
+futures
+pyfiglet
+pycryptodome
+requests
+mechanize
